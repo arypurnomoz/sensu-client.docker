@@ -11,12 +11,11 @@ RUN \
   && echo 'deb http://repos.sensuapp.org/apt sensu main' > /etc/apt/sources.list.d/sensu.list \
   && apt-get update \
   && apt-get upgrade -y \
-  && apt-get install -y sensu ruby ruby-dev build-essential git supervisor \
+  && apt-get install -y sensu ruby ruby-dev build-essential git \
   && gem install sensu-plugin etcd --no-rdoc --no-ri \
   && git clone git://github.com/sensu/sensu-community-plugins.git /etc/sensu/community
   
 ADD run.sh /tmp/run.sh
-ADD supervisor.conf /etc/supervisor/conf.d/sensu.conf
 
 EXPOSE 3030
 

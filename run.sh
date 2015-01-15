@@ -48,4 +48,4 @@ EOF
 echo "Running sensu config:"
 cat /etc/sensu/config.json
 
-exec /usr/bin/supervisord
+exec /opt/sensu/bin/sensu-client -vc /etc/sensu/config.json -d /conf.d 
