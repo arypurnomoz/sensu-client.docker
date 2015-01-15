@@ -1,6 +1,8 @@
 #!/bin/sh
 
-ADDITIONAL_INFO=",$*"
+if [ ! -z "$ADDITIONAL_INFO" ]; then
+  ADDITIONAL_INFO=",$*"
+fi
 
 if [ -z "$CLIENT_ADDRESS" ]; then
   echo "\$CLIENT_ADDRESS must be provided" 
