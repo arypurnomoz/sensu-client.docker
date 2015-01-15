@@ -1,4 +1,6 @@
-## Requirements
+## Usage
+
+Requirements
 - ssl dir with cert.pem and key.pem
 - CLIENT_NAME, CLIENT_ADDRESS, RABBITMQ_HOST, SUB
 
@@ -43,6 +45,6 @@ The example below will generate:
       "port":3030
     },
     "additional": "client-info"
-  },
+  }
 }
 ```
