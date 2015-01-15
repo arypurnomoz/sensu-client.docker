@@ -4,9 +4,7 @@ Requirements:
 
 ```sh
 docker run \
-  # ssl dir should contain cert.pem and key.pem
   -v /ssl:/ssl \
-  -v /log:/log \
   -e CLIENT_ADDRESS=ip \
   -e RABBITMQ_HOST=ip \
   -e RABBITMQ_PORT=4567 \
