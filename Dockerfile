@@ -1,8 +1,8 @@
 FROM debian:latest
 
 ENV RABBITMQ_PORT 4567
-ENV SENSU_USER admin
-ENV SENSU_PASS admin
+ENV RABBITMQ_USER sensu
+ENV RABBITMQ_PASS sensu
 
 ADD http://repos.sensuapp.org/apt/pubkey.gpg /tmp/pubkey.gpg
 
