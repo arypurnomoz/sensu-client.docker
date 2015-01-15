@@ -7,6 +7,11 @@ if [ -z "$CLIENT_ADDRESS" ]; then
   exit 1
 fi
 
+if [ -z "$CLIENT_NAME" ]; then
+  echo "\$CLIENT_ADDRESS must be provided" 
+  exit 1
+fi
+
 if [ -z "$SUB" ]; then
   echo "\$SUB must be provided" 
   exit 1
@@ -22,14 +27,14 @@ SUBSCRIPTIONS="`echo $SUB|sed s/,/\\",\\"/g`"
 cat << EOF > /etc/sensu/config.json
 {
   "client": {
-      "name": "$CLIENT_ADDRESS",
-      "address": "$CLIENT_ADDRESS",
-      "subscriptions": ["$SUBSCRIPTIONS"],
-      "socket": {
-        "bind":"0.0.0.0",
-        "port":3030
-      }
-      $ADDITIONAL_INFO
+    "name": "$CLIENT_ADDRESS",
+    "address": "$CLIENT_NAME",
+    "subscriptions": ["$SUBSCRIPTIONS"],
+    "socket": {
+      "bind":"0.0.0.0",
+      "port":3030
+    }
+    $ADDITIONAL_INFO
   },
   "rabbitmq": {
     "ssl": {

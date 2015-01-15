@@ -6,6 +6,7 @@ Requirements:
 docker run \
   -v /ssl:/ssl \
   -e CLIENT_ADDRESS=ip \
+  -e CLIENT_NAME=name \
   -e RABBITMQ_HOST=ip \
   -e RABBITMQ_PORT=4567 \
   -e RABBITMQ_USER=sensu \
