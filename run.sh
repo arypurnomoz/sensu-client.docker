@@ -45,7 +45,7 @@ cat << EOF > /etc/sensu/config.json
     },
     "host": "$RABBITMQ_HOST",
     "port": $RABBITMQ_PORT,
-    "vhost": "/sensu",
+    "vhost": "$RABBITMQ_VHOST",
     "user": "$RABBITMQ_USER",
     "password": "$RABBITMQ_PASS"
   }
