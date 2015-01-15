@@ -17,7 +17,7 @@ if [ -z "$RABBITMQ_HOST" ]; then
   exit 1
 fi
 
-SUBSCRIPTIONS="`echo $SUB|sed s/,/,\"/`"
+SUBSCRIPTIONS="`echo $SUB|sed s/,/,\\"/`"
 
 cat << EOF > /etc/sensu/config.json
 {
