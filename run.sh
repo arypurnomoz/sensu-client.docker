@@ -3,12 +3,12 @@
 ADDITIONAL_INFO=$*
 
 if [ -z "$CLIENT_ADDRESS" ]; then
-  echo "$CLIENT_ADDRESS must be provided" 
+  echo "\$CLIENT_ADDRESS must be provided" 
   exit 1
 fi
 
 if [ -z "$SUB" ]; then
-  echo "$SUB must be provided" 
+  echo "\$SUB must be provided" 
   exit 1
 fi
 
