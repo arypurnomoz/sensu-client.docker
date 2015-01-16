@@ -1,6 +1,11 @@
 # Usage:
 
-Community plugins is installed in /community dir
+Community plugins is installed in /community dir. 
+
+Gem installed:
+  - docker
+  - etcd
+  - redis
 
 Requirements:
   - ssl dir with cert.pem and key.pem
