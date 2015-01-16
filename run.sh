@@ -29,8 +29,8 @@ SUBSCRIPTIONS="`echo $SUB|sed s/,/\\",\\"/g`"
 cat << EOF > /etc/sensu/config.json
 {
   "client": {
-    "name": "$CLIENT_ADDRESS",
-    "address": "$CLIENT_NAME",
+    "name": "$CLIENT_NAME",
+    "address": "$CLIENT_ADDRESS",
     "subscriptions": ["$SUBSCRIPTIONS"],
     "socket": {
       "bind":"0.0.0.0",
