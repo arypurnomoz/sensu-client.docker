@@ -1,10 +1,10 @@
-## Usage
+# Usage:
 
 Community plugins is installed in /community dir
 
-Requirements
-- ssl dir with cert.pem and key.pem
-- CLIENT_NAME, CLIENT_ADDRESS, RABBITMQ_HOST, SUB
+Requirements:
+  - ssl dir with cert.pem and key.pem
+  - CLIENT_NAME, CLIENT_ADDRESS, RABBITMQ_HOST, SUB
 
 ```sh
 docker run \
@@ -17,9 +17,9 @@ docker run \
   -e RABBITMQ_PASS=sensu \
   -e SUB=metrics,check \
   arypurnomoz/sensu-client \
-  '
-    "additional": "client-info"
-  '
+  ' \
+    "additional": "client-info" \
+  ' \
 ```
 
 The arguments will be the additional info for client, it must be a json object without the outer braces.
