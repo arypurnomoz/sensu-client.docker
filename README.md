@@ -23,7 +23,8 @@ docker run \
 The arguments will be the additional info for client, it must be a json object without the outer braces.
 
 The example below will generate:
-```js
+
+```
 {
   "rabbitmq": {
     "ssl": {
