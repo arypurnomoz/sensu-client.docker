@@ -3,13 +3,13 @@
 Community plugins is installed in /community dir. 
 
 Gem installed:
-  - docker
-  - etcd
-  - redis
+- docker
+- etcd
+- redis
 
 Requirements:
-  - ssl dir with cert.pem and key.pem
-  - CLIENT_NAME, CLIENT_ADDRESS, RABBITMQ_HOST, SUB
+- ssl dir with cert.pem and key.pem
+- CLIENT_NAME, CLIENT_ADDRESS, RABBITMQ_HOST, SUB
 
 ```sh
 docker run \
