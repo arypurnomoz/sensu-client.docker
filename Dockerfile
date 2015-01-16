@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM arypurnomoz/sensu:latest
 
 ENV REDIS_POST 6379
 
@@ -10,11 +10,7 @@ ENV RABBITMQ_PASS sensu
 ADD http://repos.sensuapp.org/apt/pubkey.gpg /tmp/pubkey.gpg
 
 RUN \
-  apt-key add /tmp/pubkey.gpg \
-  && echo 'deb http://repos.sensuapp.org/apt sensu main' > /etc/apt/sources.list.d/sensu.list \
-  && apt-get update \
-  && apt-get upgrade -y \
-  && apt-get install -y sensu ruby ruby-dev build-essential git \
+  apt-get install -y ruby ruby-dev build-essential git \
   && gem install sensu-plugin etcd --no-rdoc --no-ri \
   && git clone git://github.com/sensu/sensu-community-plugins.git /etc/sensu/community
   
