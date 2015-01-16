@@ -1,5 +1,7 @@
 ## Usage
 
+Community plugins is installed in /community dir
+
 Requirements
 - ssl dir with cert.pem and key.pem
 - CLIENT_NAME, CLIENT_ADDRESS, RABBITMQ_HOST, SUB
