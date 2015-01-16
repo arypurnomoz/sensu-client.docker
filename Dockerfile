@@ -11,7 +11,7 @@ ADD http://repos.sensuapp.org/apt/pubkey.gpg /tmp/pubkey.gpg
 
 RUN \
   apt-get install -y ruby ruby-dev build-essential git procps apt-utils bc \
-  && gem install sensu-plugin redis docker etcd --no-rdoc --no-ri \
+  && gem install sensu-plugin redis docker docker-api etcd --no-rdoc --no-ri \
   && git clone git://github.com/sensu/sensu-community-plugins.git /community
   
 ADD run.sh /tmp/run.sh

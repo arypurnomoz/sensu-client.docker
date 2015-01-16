@@ -4,6 +4,7 @@ Community plugins is installed in /community dir.
 
 Gem installed:
 - docker
+- docker-api
 - etcd
 - redis
 
