@@ -10,7 +10,7 @@ if [ -z "$CLIENT_ADDRESS" ]; then
 fi
 
 if [ -z "$CLIENT_NAME" ]; then
-  echo "\$CLIENT_ADDRESS must be provided" 
+  echo "\$CLIENT_NAME must be provided" 
   exit 1
 fi
 
