@@ -57,3 +57,6 @@ The example below will generate:
   }
 }
 ```
+
+Provided by
+[Berdu, Jasa pembuatan website / online shop untuk anda](https://berdu.id)
